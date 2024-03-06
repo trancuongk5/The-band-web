@@ -103,7 +103,6 @@ html{
 
 /* Begin: Slider */
 #slider{
-   background-image: url(/assets/img/slider/chicago.jpg);
    background-position: top center;
    background-repeat: no-repeat;
    background-size: cover;
