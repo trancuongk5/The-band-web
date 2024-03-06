@@ -1,0 +1,364 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Global value */
+:root{
+    --heigh-header-bar: 46px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ------------ */
+
+/* Global css */
+.white-text-color{
+    color: #fff !important;
+}
+.clear{
+    clear: both;
+}
+/* ------------ */
+
+/* Begin: Header */
+#header{
+    min-height: var(--heigh-header-bar);
+    background-color: #000;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#header .header__nav{
+    display: inline-block;
+}
+
+.header__nav .nav__content{
+    line-height: var(--heigh-header-bar);
+    padding: 0 24px;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+.nav__content span{
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.nav__content .content__extend{
+    display: none;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 1px 1px 20px #ccc;
+    list-style-type: none;
+    min-width: 160px;
+    position: absolute;
+    margin-left: -24px;
+}
+
+.content__extend li{
+    text-transform: capitalize;
+    padding: 0 16px;
+}
+
+#header .header__icon-search-btn{
+    font-weight: 900;
+    display: block;
+    float: right;
+    color: #fff;
+    line-height: var(--heigh-header-bar);
+    padding: 0 30px;
+}
+
+#header .header__icon-search-btn:hover{
+    background-color: #f44336;
+}
+
+.nav__content .content__extend > li:hover,
+.header__nav .nav__content:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav__content--holding:hover .content__extend{
+    display: block;
+}
+
+/* End: Header */
+#main{
+    margin-top: var(--heigh-header-bar);
+}
+
+/* Begin: Slider */
+#slider{
+   background-image: url(/assets/img/slider/chicago.jpg);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 50%;
+   text-align: center;
+}
+
+#slider .slider__content{
+    color: #fff;
+}
+
+.slider__content .slider__content--header{
+    font-size: 24px;
+    display: block;
+    font-weight: 500;
+}
+
+.slider__content .slider__content--sub{
+    display: block;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 25px 0 47px;
+}
+
+
+/* End: Slider */
+
+/* Begin: Content */
+#content{
+    display: block;
+}
+
+.content--section{
+    padding: 64px 0;
+    max-width:780px ;
+    margin: auto;
+    text-align: center;
+}
+
+#content .content--title{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#content .content--feedback{
+    margin: 25px 0 15px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+/* Begin: Content--band */
+#content .content--discription{
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 47px;
+}
+
+#content .content__members-list{
+    padding: 15px 0;
+    margin-bottom: 32px;
+    display: inline-flex;
+    gap: 100px;
+}
+
+.content__members-list .member-item--name{
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.content__members-list .member-item--img{
+    width: 154px;
+    border-radius: 5px;
+}
+/* End: Content--band */
+
+/* Begin: Content--tour */
+#content .holding-tour{
+    background-color: #000;
+}
+
+#tour .content__list-ticket-sell{
+    text-align: left;
+    margin-top: 20px;
+    background-color: #fff; 
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+#tour .content__list-ticket-sell > li{
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    height: 40px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.content__list-ticket-sell .ticket-tour--sold-out{
+    margin-left: 16px;
+    padding:0 8px;
+    background-color: #f44336;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.content__list-ticket-sell .ticket-tour--left{
+    justify-content: space-between;
+}
+
+.content__list-ticket-sell .ticket-tour--have{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    background-color: #000;
+    color: #fff;
+    
+}
+
+#tour .content__places-list{
+    display: flex;
+    margin: 32px 0;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+.content__places-list .place-item{
+    background-color: #fff;
+}
+.place-item .place-item--img{
+    width: 100%;
+    display: block;
+}
+
+.place-item .place-item--img:hover{
+    filter: brightness(50%);
+}
+
+.place-item .place-item--content{
+    text-align: left;
+    padding: 15px;
+    color: #000;
+    font-size: 15px;
+}
+
+.place-item--content .name-content{
+    font-weight: 700;
+}
+
+.place-item--content .time-content{
+    opacity: 0.6;
+}
+
+.place-item--content .sub-content{
+    line-height: 1.5;
+}
+
+.place-item--content .btn-buy-ticket{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+}
+
+.place-item--content .btn-buy-ticket:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.place-item .place-item--content > p{
+    margin-bottom: 15px;
+}
+
+/* End: Content--tour */
+
+
+/* begin: Content--contact */
+#contact .contact__infor-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    list-style-type: none;
+    padding: 32px 0;
+}
+
+.contact__infor-box .infor-box__address > span{
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 18px;
+    column-gap: 16px;
+}
+
+.infor-box__send{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.send__in-row1{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+.infor-box__send .input-box{
+    padding: 8px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    /* margin-bottom: 8px; */
+}
+
+.infor-box__send .infor-box__btn-send{
+    display: block;
+    width: fit-content;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #FFF;
+    margin: 8px 0 16px;
+    
+    cursor: pointer;
+}
+/* End: Content--tour */
+
+
+/* End: Content */
+
+/* Begin: Footer */
+#footer{
+    display: block;
+    opacity: 0.9;
+}
+
+#footer .footer__social{
+    color: #000;
+    opacity: 0.6;
+    text-align: center;
+    margin: 64px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer__social .social__source{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.social__source > a{
+    color: #000;
+    cursor: pointer;
+}
+
+/* End: Footer */
