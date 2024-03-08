@@ -21,6 +21,7 @@ html{
 /* Global css */
 .white-text-color{
     color: #fff !important;
+    flex-direction: row-reverse;
 }
 .clear{
     clear: both;
@@ -37,10 +38,8 @@ html{
     right: 0;
     left: 0;
     z-index: 1;
-}
-
-#header .header__nav{
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__nav .nav__content{
@@ -61,7 +60,7 @@ html{
     display: none;
     background-color: #fff;
     color: #000;
-    box-shadow: 1px 1px 20px #ccc;
+    box-shadow: rgb(204, 204, 204) 0px 4px 10px 1px;
     list-style-type: none;
     min-width: 160px;
     position: absolute;
@@ -75,8 +74,6 @@ html{
 
 #header .header__icon-search-btn{
     font-weight: 900;
-    display: block;
-    float: right;
     color: #fff;
     line-height: var(--heigh-header-bar);
     padding: 0 30px;
@@ -239,11 +236,12 @@ html{
 
 .content__places-list .place-item{
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 .place-item .place-item--img{
-    width: 100%;
     height: 50%;
-    display: block;
     object-fit: cover;
 }
 
@@ -314,6 +312,7 @@ html{
 }
 .send__in-row1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 16px;
 }
@@ -326,13 +325,11 @@ html{
 }
 
 .infor-box__send .infor-box__btn-send{
-    display: block;
     width: fit-content;
     padding: 8px 16px;
     background-color: #000;
     color: #FFF;
     margin: 8px 0 16px;
-    
     cursor: pointer;
 }
 /* End: Content--tour */
