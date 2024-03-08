@@ -6,6 +6,20 @@
     text-decoration: none;
 }
 
+/* Css responsive */
+
+@media (max-width: 1023px) and (min-width: 740px) {
+    
+    .infor-box__address,
+    .infor-box__send,
+    .content__places-list,
+    .content--discription{
+        padding: 0 16px;
+    }
+}
+
+/* --- */
+
 /* Global value */
 :root{
     --heigh-header-bar: 46px;
@@ -134,7 +148,8 @@ html{
 
 .content--section{
     padding: 64px 0;
-    max-width:780px ;
+    width:780px ;
+    max-width: 100%;
     margin: auto;
     text-align: center;
 }
