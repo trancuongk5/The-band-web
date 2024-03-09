@@ -6,44 +6,6 @@
     text-decoration: none;
 }
 
-/* Css responsive */
-
-@media (max-width: 1023px) and (min-width: 740px) {
-    .contact-main,
-    .content__places-list,
-    .content--discription{
-        padding: 0 16px;
-    }
-}
-
-@media (max-width: 739px){
-    .contact-main{
-        flex-direction: column;
-        gap: 32px;
-        margin: 0 16px;
-    }
-
-    #contact .send__in-row1{
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .content__places-list{
-        padding: 0 16px;
-        flex-direction: column;
-        gap: 16px;
-    }
-    .content__places-list .place-item{
-        width: 100%;
-    }
-
-    .content--discription{
-        padding: 0 16px;
-    }
-}
-
-/* --- */
-
 /* Global value */
 :root{
     --heigh-header-bar: 46px;
@@ -66,9 +28,11 @@ html{
 }
 /* ------------ */
 
+
+
 /* Begin: Header */
 #header{
-    min-height: var(--heigh-header-bar);
+    height: var(--heigh-header-bar);
     background-color: #000;
     font-size: 15px;
     position: fixed;
@@ -110,6 +74,7 @@ html{
     padding: 0 16px;
 }
 
+#header .header__icon-menu-btn,
 #header .header__icon-search-btn{
     font-weight: 900;
     color: #fff;
@@ -117,6 +82,11 @@ html{
     padding: 0 30px;
 }
 
+#header .header__icon-menu-btn {
+    display: none;
+}
+
+#header .header__icon-menu-btn:hover,
 #header .header__icon-search-btn:hover{
     background-color: #f44336;
 }
@@ -350,10 +320,6 @@ html{
     margin-left: 20px;
 }
 
-.contact__btn-interact{
-    
-}
-
 .btn-interact--input{
     display: flex;
     flex-direction: column;
@@ -376,7 +342,12 @@ html{
     background-color: #000;
     color: #fff;float: right;
     margin-top: 16px;
-    
+}
+
+
+#contact .btn-interact__btn-send:hover{
+    color: #000;
+    background-color: #ccc;
 }
 /* End: Content */
 

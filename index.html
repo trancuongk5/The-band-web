@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black pink tour</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="shortcut icon" href='./assets/img/website_icon.png' />
     <script src="./assets/js/main.js"></script>
@@ -12,7 +13,34 @@
 <body>
 <section id="section--1">
     <!-- Begin: Header section -->
+
+    <!-- moblie vision -->
+    <header id="header-moblie">
+        <div class="unshow-header-mobile">
+            <nav id="click-menu" class="header-mobile__icon ti-menu">
+            </nav>
+            <nav class="header-mobile__icon ti-search">
+            </nav>
+        </div>
+        <nav class="show-header-mobile" >
+            <a href="#" class="nav-mobile__content">Home</a>
+            <a href="#band" class="nav-mobile__content">Band</a>
+            <a href="#tour" class="nav-mobile__content">Tour</a>
+            <a href="#contact" class="nav-mobile__content">Contact</a>
+            <a href="#" class="nav-mobile__content nav-mobile__content--holding">
+                More
+                <span class="content__icon-down ti-angle-down"></span> 
+                <ul class="content-mobile__extend">
+                    <li>Merchandise</li>
+                    <li>Extras</li>
+                    <li>Media</li>
+                </ul>
+            </a>
+        </nav>
+    </header>
+    <!--  -->
     <header id="header">
+        </nav>
         <nav class="header__nav">
             <a href="#" class="nav__content">Home</a>
             <a href="#band" class="nav__content">Band</a>
@@ -160,10 +188,19 @@
         </div>
     </footer>
     <!-- End: Footer section -->
+    
 </section>
 
 <section class="section--2">
     
 </section>
+<script>
+    document.getElementById('click-menu').addEventListener('click', function() {
+    var headerShow = document.querySelector('.show-header-mobile');
+    if (headerShow) {
+        headerShow.classList.toggle('showMenuClick');
+    }
+});
+</script>
 </body>
 </html>
