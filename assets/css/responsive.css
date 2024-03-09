@@ -133,4 +133,9 @@
         width: 300px;
         height: 320px;
     }
+
+    #contact .btn-interact__btn-send{
+        padding: 8px 40px;
+        float: none;
+    }
 }
