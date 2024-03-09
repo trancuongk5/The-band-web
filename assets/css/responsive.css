@@ -128,4 +128,9 @@
     .content--discription{
         padding: 0 16px;
     }
+
+    .content__members-list .member-item--img{
+        width: 300px;
+        height: 320px;
+    }
 }
