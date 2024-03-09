@@ -9,10 +9,34 @@
 /* Css responsive */
 
 @media (max-width: 1023px) and (min-width: 740px) {
-    
-    .infor-box__address,
-    .infor-box__send,
+    .contact-main,
     .content__places-list,
+    .content--discription{
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 739px){
+    .contact-main{
+        flex-direction: column;
+        gap: 32px;
+        margin: 0 16px;
+    }
+
+    #contact .send__in-row1{
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .content__places-list{
+        padding: 0 16px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .content__places-list .place-item{
+        width: 100%;
+    }
+
     .content--discription{
         padding: 0 16px;
     }
@@ -246,16 +270,17 @@ html{
     display: flex;
     margin: 32px 0;
     justify-content: space-between;
-    column-gap: 16px;
+    gap: 16px;
 }
 
 .content__places-list .place-item{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    /* width: 30%; */
 }
 .place-item .place-item--img{
+    width: 100%;
     height: 50%;
     object-fit: cover;
 }
@@ -303,53 +328,56 @@ html{
 
 
 /* begin: Content--contact */
-#contact .contact__infor-box {
+
+/* End: Content--contact */
+.contact-main{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.contact-main .contact__text{
     text-align: left;
     list-style-type: none;
-    padding: 32px 0;
 }
 
-.contact__infor-box .infor-box__address > span{
+.contact__text span{
     display: flex;
-    font-weight: 600;
     margin-bottom: 8px;
-    font-size: 18px;
-    column-gap: 16px;
+    font-weight: 550;
 }
 
-.infor-box__send{
+.contact__text .infor-box__information-text{
+    margin-left: 20px;
+}
+
+.contact__btn-interact{
+    
+}
+
+.btn-interact--input{
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    gap: 8px;
 }
-.send__in-row1{
+
+.btn-interact--input .send__in-row1{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 16px;
+    gap: 16px;
 }
 
-.infor-box__send .input-box{
+#contact .input-box{
     padding: 8px;
-    line-height: 1.5;
     border: 1px solid #ccc;
-    /* margin-bottom: 8px; */
 }
 
-.infor-box__send .infor-box__btn-send{
-    width: fit-content;
+#contact .btn-interact__btn-send{
     padding: 8px 16px;
+    border: 1px solid #ccc;
     background-color: #000;
-    color: #FFF;
-    margin: 8px 0 16px;
-    cursor: pointer;
+    color: #fff;float: right;
+    margin-top: 16px;
+    
 }
-/* End: Content--tour */
-
-
 /* End: Content */
 
 /* Begin: Footer */
