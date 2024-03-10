@@ -5,6 +5,7 @@
 /* Mobile */
 
 #header-moblie{
+    border-radius: 0;
     height: var(--heigh-header-bar);
     background-color: #000;
     font-size: 15px;
