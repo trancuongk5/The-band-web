@@ -93,7 +93,7 @@
         padding: 0 16px;
     }
 
-    #section--2 .box__buy-tickets{
+    #section--2 .box__buy-tickets {
         width: 80vw;
     }
 }
@@ -147,11 +147,11 @@
         float: none;
     }
 
-    #section--2 .box__buy-tickets{
+    #section--2 .box__buy-tickets {
         width: 90vw;
     }
 
-    #section--2 .btn-close{
+    #section--2 .btn-close {
         width: 20vw;
     }
 }
