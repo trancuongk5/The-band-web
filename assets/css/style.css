@@ -5,6 +5,7 @@
     box-sizing: border-box;
     text-decoration: none;
     border-radius: 3px;
+
 }
 
 /* Global value */
@@ -27,6 +28,18 @@ html {
 
 .clear {
     clear: both;
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+button{
+    cursor: pointer;
+}
+
+.showBuy{
+    display: flex;
 }
 
 /* ------------ */
@@ -390,3 +403,124 @@ html {
 }
 
 /* End: Footer */
+
+
+
+/* Start: Section 2 */
+
+#section--2{
+    background-color: rgba(0,0,0,0.4);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#section--2 .box__buy-tickets{
+    position: relative;
+    background-color: white;
+    width: 50vw;
+    border-radius:20px ;
+}
+
+#section--2 .btn-exit--icon{
+    position: absolute;
+    padding: 16px;
+    font-weight: bold;
+    display: inline-block;
+    right: 0;
+}
+
+
+#section--2 .header__buy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #009688;
+    color: #fff;
+    min-height: 16vh;
+    border-radius:20px 20px 0 0 ;
+}
+
+#section--2 .header__buy--icon{
+    font-weight: bold ;
+}
+
+#section--2 .infomation-user__buy{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+}
+
+#section--2 .infor-buy{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+#section--2 .footer__buy{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+#section--2 .btn-buy{
+    background-color: #009688;
+    border: none;
+    height: 7vh;
+    color: #fff;
+    font-weight: bold;
+    border-radius:6px ;
+}
+
+#section--2 input{
+    height: 6vh;
+    padding: 8px;
+    border: none;
+    background-color: rgba(220, 220, 220, 0.4);
+    margin-bottom: 18px;
+    border-radius:6px ;
+}
+
+#section--2 .btn-close{
+    height: 5vh;
+    width: 10vw;
+    padding: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border-radius:6px ;
+    background-color: #f44336;
+    color: #fff;
+    font-weight: bold;
+}
+
+#section--2 .infomation-user__buy--icon{
+    font-weight: bold;
+}
+
+
+#section--2 .btn-exit--icon:hover,
+#section--2 .btn-close:hover{
+    background-color: #f67f77;
+    color: white;
+    font-weight: bold;
+}
+
+#section--2 .btn-buy:hover{
+    opacity: 0.7;
+}
+

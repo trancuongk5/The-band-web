@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href='./assets/img/website_icon.png' />
 </head>
 
-<body>
+<body">
     <section id="section--1">
         <!-- Begin: Header section -->
 
@@ -203,10 +203,33 @@
 
     </section>
 
-    <section class="section--2">
-
+    <section id="section--2">
+        <div class="box__buy-tickets">
+            <span class="btn-exit--icon ti-close exit-buy-window"></span>
+            <div class="header__buy">
+                <span class="header__buy--icon ti-bag"></span>
+                <h2 class="title__product">Tickets</h2>
+            </div>
+            <div class="infomation-user__buy">
+                <div class="infor-buy first__info">
+                    <span class="infomation-user__buy--icon ti-shopping-cart"></span>
+                    <p class="description-buy">Tickets, $15 per person</p>
+                </div>
+                <input type="number" placeholder="How many?">
+                <div class="infor-buy second__info">
+                    <span class="infomation-user__buy--icon ti-user"></span>
+                    <p class="description-buy">Tickets, $15 per person</p>
+                </div>
+                <input type="email" placeholder="Enter email">
+                <button class="btn-buy">PAY <span class="btn-buy--icon ti-check"></span></button>
+            </div>
+            <div class="footer__buy">
+                <button class="btn-close exit-buy-window">Close <span class="btn-close--icon ti-close"></span></button>
+                <p class="text-help">Need <a href="#" class="to-help">help?</a></p>
+            </div>
+        </div>
     </section>
-    <script src="./assets/js/main.js"></script>
+    
 </body>
-
+<script src="./assets/js/main.js"></script>
 </html>
