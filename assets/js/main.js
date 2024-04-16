@@ -42,6 +42,32 @@ buyWindow.addEventListener('click', function(){
 })
 
 let boxBuy = document.querySelector('.box__buy-tickets');
-boxBuy.addEventListener('click', function(e){
+boxBuy.addEventListener('click', (e) => {
     e.stopPropagation();
+})
+
+
+const nameInput = document.querySelector('input[name="name"]'); 
+const emailInput = document.querySelector('input[name="email"]'); 
+const messageInput = document.querySelector('input[name="message"]'); 
+
+const btnSent = document.querySelector('.btn-interact__btn-send');
+
+btnSent.addEventListener('click', () => {
+    if(nameInput.value == '' || emailInput.value == '' || messageInput.value == ''){
+        alert('Please fill in all fields');
+    }
+    else
+    {
+        let content = {
+            fullname : nameInput.value,
+            email : emailInput.value,
+            message : messageInput.value
+        }
+        nameInput.value = '';
+        emailInput.value = '';
+        messageInput.value = '';
+        console.log(content);
+        alert('Sent successfully');
+    }
 })
